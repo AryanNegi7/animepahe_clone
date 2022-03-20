@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* main {
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+  min-height: 95vh;
+} */
+
+header {
+  width: 100vw;
+  background: #171717;
+  /* background: linear-gradient(to right,#171717 0,rgba(23,23,23,.85) 100%); */
+  /* height: 5 vh; */
+}
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  background: linear-gradient(to right, #171717 0, rgba(23, 23, 23, 0.85) 100%);
+  padding: 8px 0;
+}
+
+.left-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.left-container > .logo > .logo-anime {
+  padding-left: 7px;
+  font-size: 2rem;
+  font-weight: 200;
+  color: #e7edf3;
+}
+
+.left-container > .logo > .logo-pahe {
+  padding-right: 15px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #d5015b;
+}
+
+.left-container > .links {
+  /* background-color: #272727; */
+  height: 80%;
+  width: 60%;
+  padding: 7px 0;
+  color: #ffffff;
+}
+
+.nav-links > .nav-link {
+  /* background: blue; */
+  height: 100%;
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.3s;
+}
+.nav-links > .nav-link:hover {
+  cursor: pointer;
+  background-color: #d5015b;
+}
+
+.nav-links {
+  /* background: blue; */
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right-container {
+  /* background: green; */
+  width: 50%;
+}
+
+.input-container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.search-icon {
+  height: 70%;
+  /* display: flex; */
+  background-color: #ffffff;
+  /* align-items: center; */
+  padding: 5px 9px;
+  border: #e7edf3;
+  /* background-color: #e7edf3; */
+}
+.in {
+  border: #e7edf3;
+  /* background-color: #e7edf3; */
+  height: 70%;
+  margin-right: 4px;
+}
+main {
+  background-color: #000;
+  color: #eee;
+  min-height: 100vh;
+  width: 100vw;
+}
+.sec {
+  background-color: #000;
+  color: #eee;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* position: relative; */
+}
+.sec p {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  font-size: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: white;
+}
+.videos {
+  /* background-color: cyan; */
+  height: 95%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  /* padding-bottom: 6rem; */
+}
+.video {
+  height: 30%;
+  /* display: inline-block; */
+  width: 30%;
+  min-width: 350px;
+  /* background-color: black; */
+  margin: 0.3rem;
+  padding: 0.5rem;
+}
+.video > a > img {
+  height: 100%;
+  width: 100%;
+}
+.buttons {
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.b {
+  padding: 0.5rem 0.7rem;
+  color: #d5015b;
+  font-weight: 700;
+  font-size: 0.73rem;
+  background-color: #222;
+  border: 1px solid #000;
+}
+.page {
+  background-color: #d5015b;
+  padding: 0.3rem 0.7rem;
+  color: #222222;
+}
+
+@media screen and (max-width: 1144px) {
+  .videos {
+    /* background-color: red; */
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /* .video > a > img{
+      margin-bottom: 20rem;
+  } */
+  .video {
+    height: 30%;
+    width: 60%;
+    /* padding-bottom: 20rem; */
+    /* background-color: orange; */
+  }
+  .left-container {
+    margin: 1px;
+    padding: 1px;
+    display: block;
+  }
+  .logo,
+  .nav,
+  .header {
+    margin: 1px;
+    padding: 1px;
+  }
+  .left-container{
+    width: 100vw;
+  }
+  .links {
+    background-color: blue;
+    flex-grow: 1;
+  }
+  .nav-links {
+    background-color: red;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 1px;
+    padding: 1px;
+  }
+  .right-container {
+    display: none;
+  }
+}

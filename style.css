@@ -40,20 +40,32 @@ nav {
   align-items: center;
 }
 
-.left-container > .logo > .logo-anime {
+.logo{
+  display: flex;
+  justify-content: space-between;
+  /* background-color: pink; */
+}
+.logo-anime {
   padding-left: 7px;
   font-size: 2rem;
   font-weight: 200;
   color: #e7edf3;
 }
 
-.left-container > .logo > .logo-pahe {
+.logo-pahe {
   padding-right: 15px;
   font-size: 2rem;
   font-weight: 600;
   color: #d5015b;
 }
-
+.bars{
+  display: none;
+}
+.bars>.fa{
+  height: 100%;
+  width: 100%;
+  /* background-color: #d5015b; */
+}
 .left-container > .links {
   display: flex;
   justify-content: center;
@@ -210,23 +222,48 @@ main {
     flex-direction: column;
     align-items: flex-start;
   }
-
+  .logo{
+    width: 100%;
+  }
+  .bars{
+    display: flex;
+    height: 25px;
+    width: 22px;
+    margin-right: 13px;
+    margin-top: 7px;
+  }
+  .bars>.fa{
+    padding: 2px;
+    color: grey;
+    /* background-color: #171717; */
+  }
   .left-container > .links {
     /* background-color: red; */
+    display: none;
     justify-content: flex-start;
     width: 100vw;
   }
   .nav-links {
     /* background-color: green; */
     flex-direction: column;
-    /* align-items: flex-start; */
+    align-items: flex-start;
+  }
+  .nav-link{
+    /* background-color: blue; */
   }
   .right-container {
+    display: none;
     width: 100vw;
-    background-color: red;
+    /* background-color: red; */
     /* justify-content: flex-start; */
   }
   .input-container{
     justify-content: flex-start;
+    height: 4vh;
+  }
+  .search-icon{
+    padding: 0;
+    margin: 0;
+    /* height: 4vh; */
   }
 }

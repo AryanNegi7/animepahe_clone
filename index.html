@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="index.js"></script>
     <title>animepahe ::okay-ish anime website</title>
   </head>
   <body>
@@ -16,15 +17,20 @@
       <nav>
         <div class="left-container">
           <div class="logo">
-            <!-- <div class="logo1"> -->
+            <div class="logo1">
               <span class="logo-anime">anime</span
               ><span class="logo-pahe"><strong>pahe</strong></span>
-            <!-- </div> -->
-            
-              <!-- <i class="fa fa-bars bars"></i> -->
-            
+            </div>
+            <a
+              class="bars"
+              href="javascript:void(0);"
+              class="icon"
+              onclick="myFunction()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
           </div>
-          <div class="links">
+          <div class="links" id="myLinks">
             <ul class="nav-links">
               <li class="nav-link">#stayhome</li>
               <li class="nav-link">anime</li>
@@ -33,7 +39,7 @@
             </ul>
           </div>
         </div>
-        <div class="right-container">
+        <div class="right-container" id="search">
           <div class="input-container">
             <i class="fa fa-search search-icon"></i>
             <input type="text" placeholder="Search" class="in" />

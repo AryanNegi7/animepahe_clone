@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="videoplay.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/41e7720102.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <title>animepahe ::okay-ish anime website</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left-container">
+          <div class="logo">
+            <div class="logo1">
+              <span class="logo-anime">anime</span
+              ><span class="logo-pahe"><strong>pahe</strong></span>
+            </div>
+            <a
+              class="bars"
+              href="javascript:void(0);"
+              class="icon"
+              onclick="myFunction()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <div class="links" id="myLinks">
+            <ul class="nav-links">
+              <li class="nav-link">#stayhome</li>
+              <li class="nav-link">anime</li>
+              <li class="nav-link">queue</li>
+              <li class="nav-link">discord</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-container" id="search">
+          <div class="input-container">
+            <i class="fa fa-search search-icon"></i>
+            <input type="text" placeholder="Search" class="in" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="videoplayer">
+        <div class="reload">
+          <i class="fa fa-repeat" aria-hidden="true"></i>
+        </div>
+        <div style="margin-top: 7px; font-weight: 400">Click to reload</div>
+      </div>
+      <div class="details">
+        <div class="detail-first">
+          <button class="detail-buttons" type="button" data-toggle="dropdown">
+            kwik
+            <i
+              class="fa-solid fa-caret-up"
+              style="font-size: 15px; margin-right: 3px"
+            ></i>
+          </button>
+          <button class="detail-buttons" type="button" data-toggle="dropdown">
+            episode 240
+            <i
+              class="fa-solid fa-caret-up"
+              style="font-size: 15px; margin-right: 3px"
+            ></i>
+          </button>
+        </div>
+        <button class="detail-buttons" type="button" data-toggle="dropdown">
+          SubPlease - 720p
+          <i
+            class="fa-solid fa-caret-up"
+            style="font-size: 15px; margin-right: 3px"
+          ></i>
+        </button>
+        <button class="detail-buttons" type="button" data-toggle="dropdown">
+          Download
+          <i
+            class="fa-solid fa-caret-up"
+            style="font-size: 15px; margin-right: 3px"
+          ></i>
+        </button>
+      </div>
+      <div class="other">
+        <div class="photo">
+          <img
+            src="https://images4.alphacoders.com/476/thumbbig-47698.webp"
+            style="height: 100%; width: 100%; border-radius: 4px"
+            alt="boruto"
+          />
+        </div>
+        <div class="info">
+          <p>
+            <span class="boruto">Boruto: Naruto Next Generations</span
+            ><span class="uzumaki"> - 240</span>
+          </p>
+          <p>TV - 128 Episode (Currently Airing)</p>
+          <p>Spring 2017</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

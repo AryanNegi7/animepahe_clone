@@ -55,17 +55,19 @@ nav {
 }
 
 .left-container > .links {
-  /* background-color: #272727; */
+  display: flex;
+  justify-content: center;
+  background-color: #272727;
   height: 80%;
-  width: 60%;
-  padding: 7px 0;
+  width: 55%;
+  /* padding: 7px 0; */
   color: #ffffff;
 }
 
 .nav-links > .nav-link {
   /* background: blue; */
   height: 100%;
-  padding: 8px 15px;
+  padding: 12px 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -80,7 +82,7 @@ nav {
   /* background: blue; */
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
 }
 
@@ -180,47 +182,51 @@ main {
 
 @media screen and (max-width: 1144px) {
   .videos {
-    /* background-color: red; */
-    flex-direction: column;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    padding-left: 1px;
+    padding-right: 1px;
   }
   /* .video > a > img{
-      margin-bottom: 20rem;
+    margin-bottom: 20rem;
   } */
-  .video {
-    height: 30%;
-    width: 60%;
-    /* padding-bottom: 20rem; */
-    /* background-color: orange; */
+
+  .video:last-child {
+    display: none;
   }
+}
+
+@media screen and (max-width: 991px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
   .left-container {
-    margin: 1px;
-    padding: 1px;
-    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .logo,
-  .nav,
-  .header {
-    margin: 1px;
-    padding: 1px;
-  }
-  .left-container{
+
+  .left-container > .links {
+    /* background-color: red; */
+    justify-content: flex-start;
     width: 100vw;
   }
-  .links {
-    background-color: blue;
-    flex-grow: 1;
-  }
   .nav-links {
-    background-color: red;
+    /* background-color: green; */
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin: 1px;
-    padding: 1px;
+    /* align-items: flex-start; */
   }
   .right-container {
-    display: none;
+    width: 100vw;
+    background-color: red;
+    /* justify-content: flex-start; */
+  }
+  .input-container{
+    justify-content: flex-start;
   }
 }

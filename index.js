@@ -13,4 +13,3 @@ function myFunction() {
         y.style.display = "block";
       }
   }
-  
